@@ -1,7 +1,5 @@
-- name: Create a jenkins job using basic authentication
-  community.general.jenkins_job:
-    config: "{{ lookup('file', '/home/centos/Roboshop-Jenkins/roles/jenkins-jobs/templates/pipeline.xml') }}"
-    name: test
-    password: admin123
-    url: http://172.31.88.247:8080
-    user: admin
+- name: Include jenkins jobs
+  ansible.builtin.include_tasks:
+  file: job.yml
+  loop: "{{jobs}}"
+

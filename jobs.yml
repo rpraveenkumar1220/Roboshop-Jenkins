@@ -1,6 +1,9 @@
 - name: Roboshop  automated Jenkins job creation
   hosts: localhost
   connection: local
+  vars:
+    jobs:
+      - Roboshop-Terraform
   roles:
     - jenkins-jobs
       

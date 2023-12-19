@@ -17,7 +17,7 @@
 <configVersion>2</configVersion>
 <userRemoteConfigs>
 <hudson.plugins.git.UserRemoteConfig>
-<url>https://github.com/rpraveenkumar1220/learn-jenkins.git</url>
+<url>https://github.com/rpraveenkumar1220/{{item}}</url>
 </hudson.plugins.git.UserRemoteConfig>
 </userRemoteConfigs>
 <branches>
