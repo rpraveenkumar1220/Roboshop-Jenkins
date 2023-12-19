@@ -1,0 +1,6 @@
+- name: Roboshop Jenkins job creation
+  hosts: localhost
+  connection: local
+   - roles:
+      jenkins-jobs
+      
