@@ -1,6 +1,6 @@
-- name: Roboshop Jenkins job creation
+- name: Roboshop  automated Jenkins job creation
   hosts: localhost
   connection: local
-   - roles:
-      jenkins-jobs
+  roles:
+    - jenkins-jobs
       
