@@ -4,6 +4,8 @@
   vars:
     jobs:
       - Roboshop-Terraform
+      - catalogue
+      - payment
   roles:
     - jenkins-jobs
       
