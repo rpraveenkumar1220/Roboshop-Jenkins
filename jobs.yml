@@ -5,6 +5,9 @@
     jobs:
       - Roboshop-Terraform
       - catalogue
+      - cart
+      - user
+      - shipping
       - payment
   roles:
     - jenkins-jobs
