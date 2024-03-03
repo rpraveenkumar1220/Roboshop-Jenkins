@@ -1,6 +1,11 @@
+- name: Setup Template
+  ansible.builtin.template:
+    src: pipeline.xml
+    dest: /tmp/pipeline.xml
+
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:
-    config: "{{ lookup('file', '/home/centos/Roboshop-Jenkins/roles/jenkins-jobs/templates/pipeline.xml') }}"
+    config: "{{ lookup('file', '/tmp/pipeline.xml') }}"
     name: "{{item}}"
     password: admin123
     url: http://172.31.88.247:8080
