@@ -1,7 +1,7 @@
 def call() {
     node('workstation') {
         stage('Build') {
-            sh 'npm install'
+            //sh 'npm install'
         }
         stage('Unit Test') {
             echo "Unit testing"
