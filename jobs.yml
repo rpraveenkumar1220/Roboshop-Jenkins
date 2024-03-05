@@ -5,13 +5,13 @@
     sb_jobs:
       - Roboshop-Terraform
     mb_jobs:
-      - catalogue
-      - cart
-      - user
-      - shipping
-      - payment
-      - frontend
-      - dispatch
+#      - catalogue
+#      - cart
+#      - user
+#      - shipping
+#      - payment
+#      - frontend
+#      - dispatch
   roles:
     - jenkins-jobs
       
