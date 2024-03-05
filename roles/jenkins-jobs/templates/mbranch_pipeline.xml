@@ -2,33 +2,32 @@
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@756.v891d88f2cd46">
     <actions/>
     <description></description>
-    <displayName>{{item}}</displayName>
     <properties/>
-    <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.1135.v8de8e7899051">
+    <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.1122.v09cb_8ea_8a_724">
         <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
     </folderViews>
     <healthMetrics/>
-    <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.1135.v8de8e7899051">
+    <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.1122.v09cb_8ea_8a_724">
         <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
     </icon>
-    <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.858.v898218f3609d">
+    <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.815.v0dd5a_cb_40e0e">
         <pruneDeadBranches>true</pruneDeadBranches>
         <daysToKeep>-1</daysToKeep>
         <numToKeep>-1</numToKeep>
         <abortBuilds>false</abortBuilds>
     </orphanedItemStrategy>
     <triggers>
-        <com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger plugin="multibranch-scan-webhook-trigger@1.0.11">
+        <com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger plugin="multibranch-scan-webhook-trigger@1.0.9">
             <spec></spec>
             <token>{{item}}</token>
         </com.igalg.jenkins.plugins.mswt.trigger.ComputedFolderWebHookTrigger>
     </triggers>
     <disabled>false</disabled>
-    <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.1135.v8de8e7899051">
+    <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.1122.v09cb_8ea_8a_724">
         <data>
             <jenkins.branch.BranchSource>
-                <source class="jenkins.plugins.git.GitSCMSource" plugin="git@5.2.1">
-                    <id>fc729739-0b4f-48c8-930c-318289979fb7</id>
+                <source class="jenkins.plugins.git.GitSCMSource" plugin="git@5.1.0">
+                    <id>006f89b5-8d88-4807-84be-199f68dafd59</id>
                     <remote>https://github.com/rpraveenkumar1220/{{item}}</remote>
                     <credentialsId></credentialsId>
                     <traits>
